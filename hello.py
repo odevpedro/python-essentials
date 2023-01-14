@@ -1,26 +1,28 @@
-# Numeric types
-my_int = 42  # integer
-my_float = 3.14  # float
-my_complex = 3 + 4j  # complex
+# String Concatenation
+str1 = "Hello"
+str2 = "World"
+str3 = str1 + " " + str2
+print(str3)
 
-# Sequence types
-my_list = [1, 2, 3]  # list
-my_tuple = (1, 2, 3)  # tuple
-my_range = range(3)  # range
+# String Replication
+str4 = "Python "
+str5 = str4 * 3
+print(str5)
 
-# Text type
-my_string = "Hello, world!"  # string
+# String Slicing
+str6 = "Welcome to Python"
+print(str6[0:7])
+print(str6[7:])
 
-# Mapping type
-my_dict = {'a': 1, 'b': 2, 'c': 3}  # dictionary
+# String Methods
+str7 = "Python is fun"
+print(str7.upper())
+print(str7.lower())
+print(str7.replace("fun", "powerful"))
+print(str7.split(" "))
 
-# Set types
-my_set = {1, 2, 3}  # set
-my_frozenset = frozenset({1, 2, 3})  # frozenset
-
-# Boolean type
-my_bool = True  # boolean
-
-# Binary types
-my_bytes = b'Hello, world!'  # bytes
-my_bytearray = bytearray(b'Hello, world!')  # bytearray
+# String Formatting
+name = "John"
+age = 20
+str8 = "My name is {} and I am {} years old".format(name, age)
+print(str8)
