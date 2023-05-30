@@ -1,57 +1,18 @@
-# If-else statement
-x = 10
-if x > 5:
-    print("x is greater than 5")
-else:
-    print("x is not greater than 5")
+import random
 
-# Nested if-else statement
-y = 7
-if y > 10:
-    print("y is greater than 10")
-elif y > 5:
-    print("y is greater than 5 but not greater than 10")
-else:
-    print("y is not greater than 5")
+# Generate a random integer between 1 and 10 (inclusive)
+random_number = random.randint(1, 10)
+print("Random integer:", random_number)
 
-# For loop
-numbers = [1, 2, 3, 4, 5]
-for num in numbers:
-    print(num)
+# Generate a random floating-point number between 0 and 1
+random_float = random.random()
+print("Random float (0-1):", random_float)
 
-# While loop
-count = 0
-while count < 5:
-    print("Count:", count)
-    count += 1
+# Generate a random floating-point number between 2.5 and 5.5
+random_float_range = random.uniform(2.5, 5.5)
+print("Random float (range):", random_float_range)
 
-
-# Break statement
-numbers = [1, 2, 3, 4, 5]
-for num in numbers:
-    if num == 3:
-        break  # Exit the loop if num is 3
-    print(num)
-
-# Continue statement
-numbers = [1, 2, 3, 4, 5]
-for num in numbers:
-    if num == 3:
-        continue  # Skip the rest of the loop and continue with the next iteration if num is 3
-    print(num)
-
-# While loop with break statement
-count = 0
-while count < 5:
-    if count == 3:
-        break  # Exit the loop if count is 3
-    print("Count:", count)
-    count += 1
-
-# While loop with continue statement
-count = 0
-while count < 5:
-    count += 1
-    if count == 3:
-        continue  # Skip the rest of the loop and continue with the next iteration if count is 3
-    print("Count:", count)
+# Generate a random element from a list
+my_list = [1, 2, 3, 4, 5]
+random_element = random.choice(my_list)
+print("Random element from list:", random_element)
