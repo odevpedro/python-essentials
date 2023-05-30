@@ -1,33 +1,57 @@
-# Prompt the user for input
-user_input = input("Enter something: ")
-
-# Display the user input
-print("You entered:", user_input)
-# Prompt the user for input
-user_input = input("Enter something: ")
-
-# Display the user input
-print("You entered:", user_input)
-
-
-# Print a welcome message
-print("*********************************")
-print("Welcome to the Guessing Game!")
-print("*********************************")
-
-# Set the secret number
-secret_number = 42
-
-# Get the user's guess
-guess_str = input("Enter your guess: ")
-print("You entered: ", guess_str)
-guess = int(guess_str)
-
-# Check if the guess is correct
-if guess == secret_number:
-    print("Congratulations! You guessed correctly!")
+# If-else statement
+x = 10
+if x > 5:
+    print("x is greater than 5")
 else:
-    print("Sorry, that's incorrect.")
+    print("x is not greater than 5")
 
-# Print the end of the game message
-print("End of the game")
+# Nested if-else statement
+y = 7
+if y > 10:
+    print("y is greater than 10")
+elif y > 5:
+    print("y is greater than 5 but not greater than 10")
+else:
+    print("y is not greater than 5")
+
+# For loop
+numbers = [1, 2, 3, 4, 5]
+for num in numbers:
+    print(num)
+
+# While loop
+count = 0
+while count < 5:
+    print("Count:", count)
+    count += 1
+
+
+# Break statement
+numbers = [1, 2, 3, 4, 5]
+for num in numbers:
+    if num == 3:
+        break  # Exit the loop if num is 3
+    print(num)
+
+# Continue statement
+numbers = [1, 2, 3, 4, 5]
+for num in numbers:
+    if num == 3:
+        continue  # Skip the rest of the loop and continue with the next iteration if num is 3
+    print(num)
+
+# While loop with break statement
+count = 0
+while count < 5:
+    if count == 3:
+        break  # Exit the loop if count is 3
+    print("Count:", count)
+    count += 1
+
+# While loop with continue statement
+count = 0
+while count < 5:
+    count += 1
+    if count == 3:
+        continue  # Skip the rest of the loop and continue with the next iteration if count is 3
+    print("Count:", count)
